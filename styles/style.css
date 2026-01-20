@@ -94,6 +94,14 @@
     );
 }
 
+.card__image {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  min-inline-size: 0;
+  display: block;
+}
+
 .card__text {
   display: flex;
   flex-direction: column;
@@ -106,7 +114,7 @@
   padding: 0 25px 25px;
   display: flex;
   justify-content: flex-end;
-  gap: 12px;
+  gap: 6px;
 }
 
 .card__like-button {

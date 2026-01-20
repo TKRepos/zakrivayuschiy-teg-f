@@ -24,13 +24,14 @@
   --card-header-font-weight: 715;
   --card-text-font-weight: 410;
   --card-background-color: #ffffff;
-  --card-border-color:#000000;
-
+  --card-border-color: #000000;
 
   --font-weight-regular: 400;
   --font-weight-bold: 700;
   --font-weight-black: 900;
 
+  --contour-color: #000;
+  --animation-fill-color: red;
 }
 
 /* @media (width >= 768px) {

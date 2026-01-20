@@ -116,3 +116,12 @@
   font-family: var(--accent-font), sans-serif;
   font-size: 14px;
 }
+
+.like-icon {
+  inline-size: 39px;
+  block-size: 36px;
+}
+
+.sparks {
+  opacity: 0;
+}

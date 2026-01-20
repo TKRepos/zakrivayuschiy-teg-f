@@ -13,4 +13,106 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font), sans-serif;
+  font-variation-settings: "wght" var(--card-text-font-weight);
+  position: relative;
+}
+
+.page::before {
+  /*
+Для ревьювера: почему использую ::before а не background-attachment: fixed; в основном селекторе (как например в проектной Сложно Сосредоточится) -
+делал лендинг-страничку вне практикума и наткнулся на такую вещь что при использовании background-attachment: fixed; на iPhone почему то фон не фиксировался а скролился вместе с контентом,
+хотя на Samsung или в отладчике на ПК на маленьком разрешении всё работало корректно. Погуглил и наткнулся что есть такой баг на iPhone
+*/
+
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: var(--page-background-gradient);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.container-width {
+  inline-size: var(--card-width);
+  margin-inline: auto;
+}
+
+.border {
+  border: 2px solid var(--card-border-color);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--card-background-color);
+  margin-block-start: 100px;
+  padding-block: clamp(122px, 122px + 8 * ((100vw - 375px) / 325), 130px);
+  padding-inline: clamp(16px, 16px + 106.5 * ((100vw - 375px) / 325), 122.5px);
+  max-block-size: 368px;
+}
+
+.header__title {
+  font-family: var(--accent-font), sans-serif;
+  font-weight: 400;
+  font-size: clamp(49px, calc(30.538px + 4.923vw), 65px);
+  vertical-align: bottom;
+  text-transform: uppercase;
+}
+
+.header__subtitle {
+  font-family: var(--accent-font), sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, calc(3.615px + 2.769vw), 23px);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cards {
+  margin-block-start: 98px;
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--card-background-color);
+}
+
+.card__title {
+  padding: 4px 10px;
+  font-size: 18px;
+  font-variation-settings: "wght"
+    clamp(
+      var(--font-weight-bold),
+      calc(
+        var(--font-weight-bold) +
+          (var(--font-weight-black) - var(--font-weight-bold)) *
+          ((100vw - var(--card-width-min)) / var(--card-width-range))
+      ),
+      var(--font-weight-black)
+    );
+}
+
+.card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px;
+  font-size: 18px;
+}
+
+.card__like-container {
+  padding: 0 25px 25px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.card__like-button {
+  width: 130px;
+  height: 38px;
+  background-color: var(--card-background-color);
+  font-family: var(--accent-font), sans-serif;
+  font-size: 14px;
 }

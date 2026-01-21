@@ -24,12 +24,14 @@
           <h2 class="card__title">
             Фритрек и нулевой спринт: Подготовка к работе
           </h2>
-          <img
-            class="card__image"
-            src="./images/frame_1.png"
-            alt="Стопка книг"
-            loading="lazy"
-          />
+          <div class="card__image-container">
+            <img
+              class="card__image"
+              src="./images/frame_1.png"
+              alt="Стопка книг"
+              loading="lazy"
+            />
+          </div>
           <div class="card__text">
             <p>
               Это было самое начало пути. На этом этапе важно было проникнуться
@@ -39,10 +41,17 @@
             <p>Место для ваших воспоминаний о начале обучения.</p>
           </div>
           <div class="card__like-container">
-            <svg class="like-icon" aria-hidden="true">
-              <use href="#like-icon"></use>
-            </svg>
-            <button class="card__like-button border" aria-label="Like button">
+            <button
+              class="card__icon-button"
+              type="button"
+              aria-label="Like icon"
+            >
+              <svg class="like-icon" aria-hidden="true">
+                <use href="#like-icon"></use>
+              </svg>
+            </button>
+
+            <button class="card__like-button border" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>

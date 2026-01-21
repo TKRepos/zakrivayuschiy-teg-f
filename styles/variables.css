@@ -31,6 +31,8 @@
   --font-weight-bold: 700;
   --font-weight-black: 900;
 
+  --contour-color: #000000;
+  --contour-color-lable: #ffffff;
   --animation-fill-color: red;
 }
 

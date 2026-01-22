@@ -26,8 +26,6 @@
   --card-border-color: #000000;
 
   --font-weight-regular: 400;
-  --font-weight-bold: 700;
-  --font-weight-black: 900;
 
   --button-background-color: var(--card-background-color);
   --button-text-color-hover: #ffffff;

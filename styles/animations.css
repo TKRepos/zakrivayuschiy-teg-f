@@ -1,10 +1,10 @@
 .like-icon.is-liked .heart {
   transform-origin: center;
-  animation: heart-bounce 0.3s ease-in 0.1s both;
+  animation: heart-bounce 0.3s ease-in 0.1s;
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks-pop 0.3s ease-in 0.3s both;
+  animation: sparks-pop 0.3s ease-in 0.3s;
 }
 
 @keyframes heart-bounce {

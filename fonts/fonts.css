@@ -1,10 +1,35 @@
 @font-face {
   font-family: 'Inter';
-  src: url(./Inter-Variable.woff2) format('woff');
+  src: url(./Inter-Variable.woff2) format('woff2 supports variations'),
+  src: url(./Inter-Variable.woff2) format('woff2-variations');
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
 }
+
+/* Вопрос ревьюверу: Не совсем понял зачем указывать явно раз вверху указан диапазон 100 900, но в автотестах получил ошибку
+   "Вариативному шрифту не заданы при импорте (в файле fonts.css) все начертания. Укажите начертания: `400, 785`"
+    по этому добавляю ниже 
+*/
+
+@font-face {
+  font-family: 'Inter';
+  src: url(./Inter-Variable.woff2) format('woff2 supports variations'),
+  src: url(./Inter-Variable.woff2) format('woff2-variations');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(./Inter-Variable.woff2) format('woff2 supports variations'),
+  src: url(./Inter-Variable.woff2) format('woff2-variations');
+  font-style: normal;
+  font-weight: 785;
+  font-display: swap;
+}
+
 
 @font-face {
   font-family: 'PressStart2P';

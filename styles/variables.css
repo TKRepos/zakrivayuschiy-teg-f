@@ -1,6 +1,5 @@
 :root {
-  --page-background-gradient:
-    repeating-linear-gradient(
+  --page-background-gradient: repeating-linear-gradient(
       to right,
       #d3d3d3 0,
       #d3d3d3 2px,
@@ -15,8 +14,8 @@
       transparent 4px
     ),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
-  --main-font: "Inter";
-  --accent-font: "PressStart2P";
+  --main-font: 'Inter';
+  --accent-font: 'PressStart2P';
   --card-width-min: 375px;
   --card-width-max: 700px;
   --card-width: clamp(var(--card-width-min), 100%, var(--card-width-max));
@@ -26,26 +25,15 @@
   --card-background-color: #ffffff;
   --card-border-color: #000000;
 
-
   --font-weight-regular: 400;
   --font-weight-bold: 700;
   --font-weight-black: 900;
+
+  --button-background-color: var(--card-background-color);
+  --button-text-color-hover: #ffffff;
 
   --contour-color: #000000;
   --contour-color-lable: #ffffff;
   --animation-fill-color: red;
 }
 
-/* @media (width >= 768px) {
-  :root {
-    --content-padding: 20px;
-    --header-footer-min-height: 1024px;
-  }
-}
-
-@media (width >= 1024px) {
-  :root {
-    --content-padding: 20px;
-    --header-footer-min-height: 768px;
-  }
-} */
